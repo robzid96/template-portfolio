@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio Website Robbie Toretto - Web Developer Pemula" />
+    <meta name="keywords" content="Web Developer, HTML, CSS, JavaScript, Portfolio Pemula" />
     <title>Document</title>
   </head>
   <body>
@@ -61,19 +63,31 @@
       </section>
       <section id="contact">
         <h2>Hubungi Saya</h2>
-        <form action="">
+        <form action="" method="post">
           <label for="nama">Nama :</label><br />
-          <input type="text" name="nama" id="nama" /><br />
+          <input type="text" name="nama" id="nama" required minlength="3" maxlength="20" /><br />
           <label for="email">Email :</label><br />
-          <input type="email" name="email" id="email" /><br />
+          <input type="email" name="email" id="email" required minlength="10" maxlength="30" /><br />
           <label for="pesan">Pesan :</label><br />
-          <textarea name="pesan" id="pesan" cols="20" rows="5" placeholder="isi pesan.."></textarea><br />
+          <textarea
+            name="pesan"
+            id="pesan"
+            cols="20"
+            rows="5"
+            placeholder="isi pesan.."
+            required
+            minlength="10"
+            maxlength="160"
+          ></textarea
+          ><br />
           <button type="submit">Kirim!</button>
         </form>
       </section>
     </main>
     <footer>
-        <p>Copyrigth&copy; 2025 | <a href="#"><em>robzid.96</em></a></p>
+      <p>
+        Copyrigth&copy; 2025 | <a href="#"><em>robzid.96</em></a>
+      </p>
     </footer>
   </body>
 </html>
