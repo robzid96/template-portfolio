@@ -1,10 +1,56 @@
+/* == RESET CSS == */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* == BODY == */
+
 body {
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  margin: auto;
+}
+
+/* == HEADER == */
+
+header {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+
+header img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+header nav {
+  align-items: flex-end;
+}
+
+header nav ul li {
+  /* background-color: rgb(120, 120, 226); */
+  display: inline-block;
+  margin: 1em 0;
+  padding: 0 0.3em;
+  /* border-bottom: 1px solid salmon; */
+}
+header nav ul li a:hover {
+  background-color: brown;
+  color: aliceblue;
+}
+
+header nav ul li a {
+  border-radius: 2em;
+  padding: 0.3em 1em;
+  border: 1px solid rgb(63, 63, 63);
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+  transition: 0.3s;
+  box-sizing: border-box;
 }
